@@ -1,0 +1,109 @@
+
+
+#fondo{
+    background-image: url(../imagenes/camping\ fondo\ hd.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+
+.grid-area {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "nav nav nav"
+        "info info info";
+
+        grid-template-rows: 100px 200px 600px;
+        gap: 10px;
+}
+header {
+    grid-area: header;
+    text-align: center;
+    color: white;
+}
+nav {
+    grid-area: nav;
+}
+section {
+    grid-area: info;
+    width: 90%;
+    justify-self: center;
+}
+
+section .grid-container{
+display: grid;
+grid-template-columns:repeat(5,1fr);
+grid-auto-rows: 180px;
+
+border: 1px solid black;
+
+}
+section .grid-items{
+
+border: 1px solid coral;
+
+
+}
+section .grid-items img {
+width: 100%;
+height: 100%;
+
+}
+section .grid-items h2 {
+    text-align: center;
+    margin-top: 60px;
+    color: white;
+    font-size:30px ;
+
+}
+section .grid-items h3 {
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+    font-size: 20px;
+}
+
+#search-box {
+    position: relative;
+    width: 53%;
+    margin: 0;
+    top: 40%;
+    left: 23%;
+
+    }
+    #search-form {
+    height: 50px;
+    background-color: #fff;
+    overflow: hidden;
+    }
+    #search-text {
+    font-size: 20px;
+    color:black;
+    border-width: 0;
+    background: transparent;
+    }
+    
+    #search-box input[type="text"] {
+    width: 90%;
+    padding: 8px 0 12px 1em;
+    color: #333;
+    outline: none;
+    }
+    #search-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50px;
+    width: 200px;
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    line-height: 4px;
+    border-width: 0;
+    background-color: #cbf3ee;
+    cursor: pointer;
+
+    }
+
