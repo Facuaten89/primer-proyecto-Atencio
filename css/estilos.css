@@ -1,5 +1,5 @@
 
-
+/* LISTA DE PRECIOS */
 #fondo{
     background-image: url(../imagenes/camping\ fondo\ hd.jpg);
     background-position: center center;
@@ -8,102 +8,551 @@
     background-size: cover;
     }
 
-.grid-area {
-    display: grid;
-    grid-template-areas:
+   .grid-area {
+      display: grid;
+      grid-template-areas:
+          "header header header"
+          "nav nav nav"
+          "section section section";
+  
+          grid-template-rows: 5% 10% 90%;
+          gap: 50px;
+  }
+  header {
+      grid-area: header;
+      text-align: center;
+      color:white;
+ }
+ header h1{
+   font-size: 20px;
+ }
+  nav {
+      grid-area: nav;
+     
+  }
+  section {
+      grid-area: section;
+      width: 90%;
+      justify-self: center;
+      
+ }
+  
+  section .grid-container{
+  display: grid;
+  grid-template-columns:repeat(5,1fr);
+  grid-auto-rows: 100px;
+  
+  border: 1px solid black;
+  
+  }
+  section .grid-items{
+  
+  border: 1px solid coral;
+  
+  
+  }
+  section .grid-items img {
+  width: 100%;
+  height: 100%;
+  
+  }
+  section .grid-items h2 {
+      text-align: center;
+      margin-top: 40px;
+      color: white;
+      font-size:20px ;
+  
+  }
+  section .grid-items h3 {
+      text-align: center;
+      margin-top: 40px;
+      color: white;
+      font-size: 10px;
+  }
+  
+  #search-box {
+      position: relative;
+      width: 60%;
+      margin: 0;
+      top: 50%;
+      left: 23%;
+  
+      }
+      #search-form {
+      height: 30px;
+      background-color: #fff;
+      overflow: hidden;
+      }
+      #search-text {
+      font-size: 10px;
+      color:black;
+      border-width: 0;
+      background: transparent;
+      }
+      
+      #search-box input[type="text"] {
+      width: 90%;
+      padding: 8px 0 12px 1em;
+      color: #333;
+      outline: none;
+      position: relative;
+      top: -30%;
+      }
+      #search-button {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 30px;
+      width: 150px;
+      font-size: 10px;
+      color: #555;
+      text-align: center;
+      line-height: 4px;
+      border-width: 0;
+      background-color: #cbf3ee;
+      cursor: pointer;
+  
+      }
+  
+    /* CONTACTO */
+
+    #contacto {
+        background-image: url(../imagenes/camping\ fondo\ hd.jpg);
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+
+   #contacto .contacto-area {
+ 
+        display: grid;
+        grid-template-areas: 
         "header header header"
+        "section section section"
         "nav nav nav"
-        "info info info";
-
-        grid-template-rows: 100px 200px 600px;
-        gap: 10px;
-}
-header {
-    grid-area: header;
-    text-align: center;
-    color: white;
-}
-nav {
-    grid-area: nav;
-}
-section {
-    grid-area: info;
-    width: 90%;
-    justify-self: center;
-}
-
-section .grid-container{
-display: grid;
-grid-template-columns:repeat(5,1fr);
-grid-auto-rows: 180px;
-
-border: 1px solid black;
-
-}
-section .grid-items{
-
-border: 1px solid coral;
-
-
-}
-section .grid-items img {
-width: 100%;
-height: 100%;
-
-}
-section .grid-items h2 {
-    text-align: center;
-    margin-top: 60px;
-    color: white;
-    font-size:30px ;
-
-}
-section .grid-items h3 {
-    text-align: center;
-    margin-top: 70px;
-    color: white;
-    font-size: 20px;
-}
-
-#search-box {
-    position: relative;
-    width: 53%;
-    margin: 0;
-    top: 40%;
-    left: 23%;
-
+        "footer footer footer"
+        ;
+     grid-template-rows: 20vh 60% 40% 5%;
+     gap: 5%;
+         }
+     header{
+     
+         grid-area: header;
+         justify-self: cente;
+        font-size: 30px;
+        }
+     section{
+     grid-area: section;
+     justify-self: center;
+     }
+     nav{
+     grid-area: nav;
+     width: 90%;
+     justify-self: center;
+     text-align: center;
+     font-size: 30px;
+     color: white;
     }
-    #search-form {
-    height: 50px;
-    background-color: #fff;
-    overflow: hidden;
-    }
-    #search-text {
-    font-size: 20px;
-    color:black;
-    border-width: 0;
-    background: transparent;
+     footer{
+     grid-area: footer;
+     text-align: center;
+     position: relative;
+     top: 10%;
+
     }
     
-    #search-box input[type="text"] {
-    width: 90%;
-    padding: 8px 0 12px 1em;
-    color: #333;
-    outline: none;
+#contacto .titulo-form{
+width: 100%;
+height: 20vh;
+text-align: center;
+font-size: 30px;
+color: white;
+margin: 0%;
+
+}
+
+#contacto .form {
+  
+ width: 100%;
+ height: 120vh;
+ text-align: center;
+ margin: 0%;
+
+}
+#contacto .form ul{
+position: relative;
+top: 5%;
+
+
+}
+
+
+#contacto .form ul li{
+margin-bottom: 80px;
+list-style: none;
+font-size: 20px;
+color: white;
+}
+
+
+#contacto .map{
+    margin-top: 10%;
+}
+
+#contacto .enlace-1 ul li {
+  display: inline;
+  padding: 20px;
+  font-size: 30px;
+}
+#contacto .enlace-1 ul li a{
+    color: white;
+}
+
+/* NUESTROS PRODUCTOS */
+
+#productos {
+    background-image: url(../imagenes/camping\ fondo\ hd.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     }
-    #search-button {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 50px;
-    width: 200px;
-    font-size: 20px;
-    color: #555;
+
+
+
+#productos .producto-area {
+ 
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "section section section"
+    "nav nav nav"
+    "aside aside aside"
+    "article article article"
+    "footer footer footer"
+    ;
+ grid-template-rows: 20vh 30% 30% 30% 30% 5%;
+ gap: 0%;
+     }
+ header{
+  grid-area: header;
+    margin: 0%;
+    }
+ section{
+grid-area: section;
+margin: 0%;
+
+ }
+ nav{
+grid-area: nav;
+
+}
+aside {
+grid-area: aside;
+
+
+}
+article{
+    grid-area: article;
+
+}
+ footer{
+grid-area: footer;
+
+}
+
+#productos .titulo {
+    font-size: 30px;
+    color: white;
+    }
+#productos .subtitulo{
     text-align: center;
-    line-height: 4px;
-    border-width: 0;
-    background-color: #cbf3ee;
-    cursor: pointer;
-
+    position: relative;
+    top: 200px;
+    font-size: 25px;
+    color: white;
     }
+    
+    #productos .subtitulo-2{
+    text-align: center;
+    position: relative;
+    top: 200px;
+    margin-top: -200px;
+    font-size: 25px;
+    color: white;
+    }
+    
+    #productos .subtitulo-3{
+    text-align: center;
+    position: relative;
+    top: 200px;
+    margin-top: -200px;
+    font-size: 25px;
+    color: white;
+    }
+    
+    #productos .subtitulo-4{
+    text-align: center;
+    position: relative;
+    top: 200px;
+    margin-top: -200px;
+    font-size: 25px;
+    color: white;
+    }
+    
+    #productos .catalogo {
+    width: 80%;
+    height:50%;
+    border: 2px solid #54aabb;
+    display: flex;
+    padding: 20px;
+    background-color:#20889d;
+    gap: 50px;
+    flex-flow: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    margin-bottom: 10%;
+    margin-top: 20%;
+    
+    }
+    #productos .catalogo .pro {
+    width: 200px;
+    height: 200px;
+    background-color:white;
+    padding: 15px;
+    border-radius: 10px;
+    }
+    #productos .catalogo .pro h3 {
+    font-size: 30px;
+    color:#a6d9e4;
+    text-align: center;
+    position: relative;
+    top:75px
+    
+    
+    }
+    #productos .catalogo .pro:nth-child(1){
+      background-image: url(../img1/cana-shimano.jpg);
+      background-size: cover;
+     
+    }
+    #productos .catalogo .pro:nth-child(2){
+      background-image: url(../img1/reel.jpg);
+      background-size: cover;
+     
+    }
+    #productos .catalogo .pro:nth-child(3){
+      background-image: url(../img1/caja\ de\ pesca.jpg);
+      background-size: cover;
+     
+    }
+    #productos .catalogo .pro:nth-child(4){
+      background-image: url(../img1/guantes.jpg);
+      background-size: cover;
+     
+    }
+    #productos .catalogo .pro:nth-child(5){
+      background-image: url(../img1/chaleco.jpg);
+      background-size: cover;
+     
+    }
+    #productos .catalogo .pro:nth-child(6){
+      background-image: url(../img1/wader.jpg);
+      background-size: cover;
+     
+    }
+    #productos .catalogo .pro:nth-child(7){
+      background-image: url(../img1/moscas.jpg);
+      background-size: cover;
+     
+    }
+    #productos .catalogo .pro:nth-child(8){
+      background-image: url(../img1/cuchara.jpg);
+      background-size: cover;
+    }
+    
+    #productos .catalogo .cam {
+        width: 200px;
+        height: 200px;
+        background-color:white;
+        padding: 15px;
+        border-radius: 10px;
+        }
+        #productos .catalogo .cam h3 {
+        font-size: 30px;
+        color:#a6d9e4;
+        text-align: center;
+        position: relative;
+        top:75px
+        
+        
+        }
+        #productos .catalogo .cam:nth-child(1){
+          background-image: url(../img1/carpas.jpg);
+          background-size: cover;
+         
+        }
+        #productos .catalogo .cam:nth-child(2){
+          background-image: url(../img1/anafe.jpg);
+          background-size: cover;
+         
+        }
+        #productos .catalogo .cam:nth-child(3){
+          background-image: url(../img1/faroles.jpg);
+          background-size: cover;
+         
+        }
+        #productos .catalogo .cam:nth-child(4){
+          background-image: url(../img1/bolsas-dormir.jpg);
+          background-size: cover;
+         
+        }
+        #productos .catalogo .cam:nth-child(5){
+          background-image: url(../img1/colchon-inflable.jpg);
+          background-size: cover;
+         
+        }
+        #productos .catalogo .cam:nth-child(6){
+          background-image: url(../img1/conser\ coleman.jpg);
+          background-size: cover;
+         
+        }
+        #productos .catalogo .cam:nth-child(7){
+          background-image: url(../img1/mesita.png);
+          background-size: cover;
+         
+        }
+        #productos .catalogo .cam:nth-child(8){
+          background-image: url(../img1/silla.jpg);
+          background-size: cover;
+        }
+        
 
+        #productos .catalogo .mon {
+            width: 200px;
+            height: 200px;
+            background-color:white;
+            padding: 15px;
+            border-radius: 10px;
+            }
+            #productos .catalogo .mon h3 {
+            font-size: 30px;
+            color:#a6d9e4;
+            text-align: center;
+            position: relative;
+            top:75px
+            
+            
+            }
+            #productos .catalogo .mon:nth-child(1){
+              background-image: url(../img1/moch\ doite.jpg);
+              background-size: cover;
+             
+            }
+            #productos .catalogo .mon:nth-child(2){
+              background-image: url(../img1/trekk.jpg);
+              background-size: cover;
+             
+            }
+            #productos .catalogo .mon:nth-child(3){
+              background-image: url(../img1/silla.jpg);
+              background-size: cover;
+             
+            }
+            #productos .catalogo .mon:nth-child(4){
+              background-image: url(../img1/bolsa-hidratacion.jpg);
+              background-size: cover;
+             
+            }
+            #productos .catalogo .mon:nth-child(5){
+              background-image: url(../img1/linternas.jpg);
+              background-size: cover;
+             
+            }
+            #productos .catalogo .mon:nth-child(6){
+              background-image: url(../img1/binoculares.jpg);
+              background-size: cover;
+             
+            }
+            #productos .catalogo .mon:nth-child(7){
+              background-image: url(../img1/anteojos.jpg);
+              background-size: cover;
+             
+            }
+            #productos .catalogo .mon:nth-child(8){
+              background-image: url(../img1/cuellitos.jpg);
+              background-size: cover;
+            }
+            
+            #productos .catalogo .arm {
+                width: 200px;
+                height: 200px;
+                background-color:white;
+                padding: 15px;
+                border-radius: 10px;
+                }
+                #productos .catalogo .arm h3 {
+                font-size: 30px;
+                color:#a6d9e4;
+                text-align: center;
+                position: relative;
+                top:75px
+                
+                
+                }
+                #productos .catalogo .arm:nth-child(1){
+                  background-image: url(../img1/aire-comp.jpg);
+                  background-size: cover;
+                 
+                }
+                #productos .catalogo .arm:nth-child(2){
+                  background-image: url(../img1/pistola-co2.jpg);
+                  background-size: cover;
+                 
+                }
+                #productos .catalogo .arm:nth-child(3){
+                  background-image: url(../img1/balines.jpg);
+                  background-size: cover;
+                 
+                }
+                #productos .catalogo .arm:nth-child(4){
+                  background-image: url(../img1/diana.jpg);
+                  background-size: cover;
+                 
+                }
+                #productos .catalogo .arm:nth-child(5){
+                  background-image: url(../img1/funda.jpg);
+                  background-size: cover;
+                 
+                }
+                #productos .catalogo .arm:nth-child(6){
+                  background-image: url(../img1/miras.jpg);
+                  background-size: cover;
+                 
+                }
+                #productos .catalogo .arm:nth-child(7){
+                  background-image: url(../img1/airsoft.jpg);
+                  background-size: cover;
+                 
+                }
+                #productos .catalogo .arm:nth-child(8){
+                  background-image: url(../img1/arcos.jpg);
+                  background-size: cover;
+                }
+
+                #productos .enlace-1 ul li{
+    
+                    text-align: center;
+                    display: inline;
+                    padding: 20px;
+                    font-size: 30px;
+                  
+                }
+                #productos .enlace-1 ul li a{
+
+                    color: white;
+                }
+
+            
