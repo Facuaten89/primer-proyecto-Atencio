@@ -23,26 +23,32 @@
 }
 header {
     grid-area: header; 
-}
 
+}
 
 header.lista {
     position: relative;
     left: 280px;
     bottom: 300px;
-    padding: 25px 60px;
+    padding: 30px 60px;
     
+    }
+
+    header .lista ul{
+    position: relative;
+    left: 70px;
+
     }
 
 ul li {
     list-style: none;
     display: inline;
     position: relative;
-    left: 50px;
+    left: 25px;
     width: 100%;
 }
 ul li a {
-    padding: 10px 40px;
+    padding: 10px 80px;
     margin: 0px 10px;
     text-decoration: none;
     border: 1px solid black;
@@ -99,6 +105,7 @@ color: blue;
 position: relative;
 left: 15%;
 top: -20%;
+font-size: 20px;
 }
 
 aside {
@@ -167,39 +174,39 @@ grid-area: article;
 
 
 article .img-container {
-    width:97%;
-    height: 94%;
-    border: 10px dashed #54aabb;
+    width:100%;
+    height: 100%;
     padding: 0px;
     margin: auto;
     display: flex;
-    flex-flow:row wrap;
+    flex-flow:row ;
     justify-content: center;
     align-items: center;
      flex-direction: column;
      position: relative;
      top: 2%;
      left: 5%;
+    
 }
 
 
 
 
-article.img-item{
-    width: 500px;
-    border: 1px solid white;
-    height: 500px;
+article .img-container .img-item{
+    width: 350px;
+    border: 3px solid black;
+    height: 550px;
     background-color: blueviolet;
     color: white;
-    margin: 34px;
-    background-size: 100% 100%;
+    margin: 20px;
+
     
  }
  
-article .img-item img {
+article .img-container.img-item img {
     width: 100%;
-    height: 300px;
-    margin-bottom: 40px;
+    height: 100%;
+ 
     
 }
 
@@ -214,15 +221,16 @@ hgroup .margen {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 340px;
-
 }
 .margen img {
     width: 107%;
     filter: grayscale(1);
     position: relative;
     left: 160%;
-    bottom: -2%;
+    bottom: -1%;
     overflow: hidden;
+    margin-top: 12px;
+    
 }
 .margen img:hover {
     filter: none;
@@ -245,7 +253,7 @@ footer {
         grid-template-columns: repeat(4, 1fr);
         gap: 5px;
         position: relative;
-        top: 8%;
+        top: 30%;
     }
     .galeria-grid img {
         width: 100%;
