@@ -100,7 +100,7 @@ left: 39%;
         "nav nav nav"
         "footer footer footer"
         ;
-     grid-template-rows: 20vh 60% 40% 5%;
+     grid-template-rows: 20vh 65% 40% 5%;
      gap: 5%;
          }
      header{
@@ -139,33 +139,52 @@ left: 5%;
 width: 100%;
 height: 20vh;
 text-align: center;
-font-size: 30px;
+font-size: 40px;
 color: white;
 margin: 0%;
 
 }
 
-#contacto .form {
+#contacto .titulo-form h3 {
+font-size: 35px;
+
+ 
+}
+#contacto .form{
+  color: white;
+}
+
+
+#contacto .col-md-4{
+  margin-top: 50px;
+  position: relative;
+  left: 36%;
+}
+#contacto .col-md-6{
+  margin-top: 50px;
+  position: relative;
+  left: 36%;
+}
+#contacto .col-md-3{
+  margin-top: 50px;
+  position: relative;
+  left: 36%;
+}
+#contacto .col-12{
+  margin-top: 50px;
+  position: relative;
+  left: 36%;
   
- width: 100%;
- height: 120vh;
- text-align: center;
- margin: 0%;
-
 }
-#contacto .form ul{
-position: relative;
-top: 5%;
-
-
+#contacto .mb-3{
+  margin-top: 60px;
+  text-align: center;
+  position: relative;
 }
-
-
-#contacto .form ul li{
-margin-bottom: 80px;
-list-style: none;
-font-size: 20px;
-color: white;
+#contacto .col-13{
+  position: relative;
+  left: 43%;
+  margin-top: 60px;
 }
 
 
@@ -219,18 +238,25 @@ grid-area: nav;
 }
 aside {
 grid-area: aside;
-
+width: 90%;
+position: relative;
+left: 5%;
+top: -20%;
 
 }
 article{
     grid-area: article;
+    width: 90%;
+position: relative;
+left: 5%;
+top: -40%;
 
 }
  footer{
 grid-area: footer;
 
 }
-#productos .titulo {
+#productos .producto-area .titulo {
 position: relative;
 left: 5%;
 }
@@ -277,7 +303,7 @@ left: 5%;
     display: flex;
     padding: 20px;
     background-color:#20889d;
-    gap: 50px;
+    gap: 40px;
     flex-flow: wrap;
     margin-left: auto;
     margin-right: auto;
@@ -405,6 +431,7 @@ left: 5%;
             background-color:white;
             padding: 15px;
             border-radius: 10px;
+    
             }
             #productos .catalogo .mon h3 {
             font-size: 30px;
@@ -515,6 +542,7 @@ left: 5%;
 
                 position: relative;
                 left: 40%;
+               bottom: 500px;
 
                 }
 
