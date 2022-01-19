@@ -71,7 +71,6 @@ ul li ul li a {
 }
 
 
-
 nav {
     grid-area: nav;
 }
@@ -264,6 +263,68 @@ footer {
         
     }
 
+
+
+@media (max-width: 576px) { 
+
+    header {
+        grid-area: header; 
+    
+    }
+    
+    header.lista {
+        position: relative;
+        left: 280px;
+        bottom: 300px;
+        padding: 30px 60px;
+        
+        }
+    
+        header .lista ul{
+        position: relative;
+        left: 70px;
+    
+        }
+    
+    ul li {
+        list-style: none;
+        display: inline;
+        position: relative;
+        left: 25px;
+        width: 100%;
+    }
+    ul li a {
+        padding: 10px 40px;
+        margin: 0px 10px;
+        text-decoration: none;
+        border: 1px solid black;
+        color: black;
+        display: inline-block;
+        min-width: 170px;
+        text-align: center;
+    }
+    ul li a:hover {
+        background-color: black;
+        color: white;
+    }
+    
+    ul li:hover ul {
+        display: block;
+    }
+    ul li ul li a {
+        font-size: 12px;
+        text-align: left;
+    }
+    
+
+
+ }
+
+
+
+
+
+
 @keyframes mi-efecto {
 0%{
     opacity: 0;
@@ -273,3 +334,7 @@ footer {
 
     
 }
+
+
+
+  
