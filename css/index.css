@@ -17,12 +17,13 @@
         "info nav publi"
         "main article hgroup"
         "footer footer footer";
-        grid-template-rows: 50px 50px 100px 100px 1500px 300px;
+        grid-template-rows: 80px 50px 100px 100px 1500px 300px;
         grid-template-columns: 1fr 700px 1fr;
         gap: 10px;
 }
 header {
     grid-area: header; 
+    
 
 }
 
@@ -69,7 +70,6 @@ ul li ul li a {
     font-size: 12px;
     text-align: left;
 }
-
 
 nav {
     grid-area: nav;

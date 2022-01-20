@@ -13,8 +13,9 @@
       grid-template-areas:
           "header header header"
           "nav nav nav"
-          "section section section";
-  
+          "section section section"
+          "footer footer footer";
+   
           grid-template-rows: 5% 10% 90%;
           gap: 50px;
   }
@@ -35,6 +36,10 @@
       width: 90%;
       justify-self: center;
       
+ }
+ footer{
+   grid-area: footer;
+   justify-content: center;
  }
   
   section .grid-container{
@@ -73,12 +78,7 @@
     position: relative;
     left: 5%;
   }
-  #fondo .pagination{
-position: relative;
-top: 300px;
-left: 39%;
 
-  }
   
   
     /* CONTACTO */
