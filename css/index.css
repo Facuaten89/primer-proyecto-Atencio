@@ -1,6 +1,6 @@
 
 
-#fondo{
+#fondo {
         background-image: url(../imagenes/camping\ fondo\ hd.jpg);
         background-position: center center;
         background-repeat: no-repeat;
@@ -27,49 +27,6 @@ header {
 
 }
 
-header.lista {
-    position: relative;
-    left: 280px;
-    bottom: 300px;
-    padding: 30px 60px;
-    
-    }
-
-    header .lista ul{
-    position: relative;
-    left: 70px;
-
-    }
-
-ul li {
-    list-style: none;
-    display: inline;
-    position: relative;
-    left: 25px;
-    width: 100%;
-}
-ul li a {
-    padding: 10px 80px;
-    margin: 0px 10px;
-    text-decoration: none;
-    border: 1px solid black;
-    color: black;
-    display: inline-block;
-    min-width: 170px;
-    text-align: center;
-}
-ul li a:hover {
-    background-color: black;
-    color: white;
-}
-
-ul li:hover ul {
-    display: block;
-}
-ul li ul li a {
-    font-size: 12px;
-    text-align: left;
-}
 
 nav {
     grid-area: nav;
@@ -262,64 +219,6 @@ footer {
         filter: none;
         
     }
-
-
-
-@media (max-width: 576px) { 
-
-    header {
-        grid-area: header; 
-    
-    }
-    
-    header.lista {
-        position: relative;
-        left: 280px;
-        bottom: 300px;
-        padding: 30px 60px;
-        
-        }
-    
-        header .lista ul{
-        position: relative;
-        left: 70px;
-    
-        }
-    
-    ul li {
-        list-style: none;
-        display: inline;
-        position: relative;
-        left: 25px;
-        width: 100%;
-    }
-    ul li a {
-        padding: 10px 40px;
-        margin: 0px 10px;
-        text-decoration: none;
-        border: 1px solid black;
-        color: black;
-        display: inline-block;
-        min-width: 170px;
-        text-align: center;
-    }
-    ul li a:hover {
-        background-color: black;
-        color: white;
-    }
-    
-    ul li:hover ul {
-        display: block;
-    }
-    ul li ul li a {
-        font-size: 12px;
-        text-align: left;
-    }
-    
-
-
- }
-
 
 
 
