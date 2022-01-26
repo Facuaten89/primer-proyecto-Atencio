@@ -1,5 +1,6 @@
+/* varibles */
 #fondo {
-  background-image: url(./imagenes/fondo.jpg);
+  background-image: url(../imagenes/fondo.jpg);
   background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
