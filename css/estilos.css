@@ -128,9 +128,13 @@ font-size: 35px;
 }
 
 #contacto .pagination{
-  position: relative;
-  left: 38%;
-}
+justify-content: center;
+position: relative;
+left: 6%;
+ }
+  
+
+
 
 
   
