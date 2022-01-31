@@ -1,4 +1,51 @@
 /* varibles */
+#fondo main .twitter {
+  background-image: url(/imagenes/iconos/twitter.png);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+#fondo main .facebook {
+  background-image: url(/imagenes/iconos/facebook.png);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+#fondo main .instagram {
+  background-image: url(/imagenes/iconos/instagram.png);
+  width: 50px;
+  height: 50px;
+  background-size: cover;
+}
+
+#fondo main .btn_wsp img {
+  width: 100px;
+  height: 100px;
+  background-color: #33D374;
+  border-radius: 100%;
+  text-align: center;
+  margin: 5px;
+  position: fixed;
+  top: 85%;
+  gap: 5px;
+}
+
+#fondo main .btn_tel img {
+  width: 100px;
+  height: 100px;
+  background-color: #108EFF;
+  border-radius: 100%;
+  text-align: center;
+  margin: 5px;
+  position: fixed;
+  top: 85%;
+  gap: 5px;
+  position: fixed;
+  left: 7%;
+}
+
 #fondo {
   background-image: url(../imagenes/fondo.jpg);
   background-position: center center;

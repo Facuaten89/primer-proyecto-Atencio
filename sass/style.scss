@@ -3,7 +3,55 @@
 //com. no compila
 
 $colorTexto: white;
+$boxResponsive: 100%;
+$boxBorder: 3px solid black;
+$ancho: 100px;
+$alto:100px;
+$color: #33D374;
 
+
+$redes: twitter facebook instagram;
+ 
+@each $red in $redes {
+ #fondo main .#{$red} {
+    background-image: url(/imagenes/iconos/);
+    width:50px;
+    height:50px;
+    background-size: cover;
+  }
+}
+
+@mixin container($ancho, $alto, $color) {
+    width: $ancho;
+    height: $alto;
+    background-color: $color;
+    border-radius: 100%;
+    text-align: center;
+    margin: 5px;
+    position: fixed;
+    top: 85%; 
+    gap: 5px;
+} 
+  
+#fondo{
+     main { 
+  .btn_wsp{
+      img { 
+    @include container(200px, 100px, #33D374)
+
+}
+}
+  .btn_tel{
+      img { 
+    @include container(150px, 50px, #108EFF);
+  position: fixed;
+  left: 7%;
+}
+}
+
+}
+
+}
 
 
 #fondo{
@@ -40,7 +88,7 @@ nav{
 
 img{
 
-    width: 100%;
+    width: $boxResponsive;
     height: 100%;
     position: relative;
     left: 5%;
@@ -81,7 +129,7 @@ aside{
 .horarios{
 
 li{
-    width: 100%;
+    width: $boxResponsive;
     height: 100%;
     text-align: center;
     list-style: none;
@@ -90,7 +138,7 @@ li{
    font-size: 20px;
 
    h2 {
-    width: 100%;
+    width: $boxResponsive;
     text-align: center;
     font-size: 30px;
     color: $colorTexto;  
@@ -106,7 +154,7 @@ ul{
 
 li{
     display: block;
-    width: 100%;
+    width: $boxResponsive;
     height: 110px;
     font-family: 'Pacifico', cursive;
     font-family: 'Yuji Boku', serif;    
@@ -128,6 +176,9 @@ li{
         animation-duration: 2s; }
         
     }
+
+
+    
 }
 
 }
@@ -138,7 +189,7 @@ article {
 
 & .img-container{
 
-    width:100%;
+    width: $boxResponsive;
     height: 100%;
     padding: 0px;
     margin: auto;
@@ -153,13 +204,13 @@ article {
 
 & .img-item{
     width: 350px;
-    border: 3px solid black;
+    border: $boxBorder;
     height: 550px;
     background-color: blueviolet;
     color: $colorTexto;
     margin: 20px;
 img{
-    width: 100%;
+    width: $boxResponsive;
     height: 100%;
 }
 }
@@ -215,7 +266,7 @@ footer{
     top: 30%;
 
 img{
-    width: 100%;
+    width: $boxResponsive;
     filter: grayscale(1);
 
 }
