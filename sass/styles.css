@@ -10,7 +10,7 @@ html{
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: cover;
+background-size: cover;
 }
 
 
@@ -193,3 +193,67 @@ width: 50%;
  #home-activities-container .home-activities-item {
     margin-bottom: 50px;
     }
+@media all and (max-width:600px) {
+    #myCarousel .carousel-inner {
+width: 280vw;
+}
+#NI article .container{
+position: relative;
+left: 100vw;
+}
+#carouselExampleInterval{
+
+    width: 25%;
+    position: relative;
+    right: 60vw;
+    
+    }
+    
+    #carouselExampleInterval .carousel-inner{
+    width: 400px;
+    
+
+    } 
+    
+    #carouselExampleInterval .carousel-item img {
+    background-color: red;
+    width: 400px;
+    height: 400px;
+    
+    }
+    #NI section .parent {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        grid-column-gap: 41px;
+        grid-row-gap: 20px;
+        position: relative;
+        left: 210px;
+        top: 100px;
+    
+        }
+        
+   #NI article .galeria-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 1%;
+    grid-row-gap: 20px;
+    }
+
+    #NI aside .container .decorated {
+        position: relative;
+        right: 18%;
+        font-size: 5em;
+        color: white;
+  
+
+}
+
+#home-activities-container .home-activities-item {
+margin-bottom: 3%;
+position: relative;
+left: 85vw;
+}
+    
+}
