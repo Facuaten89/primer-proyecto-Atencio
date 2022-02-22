@@ -479,7 +479,64 @@ footer {
   background-size: cover;
 }
 
+#NP .CatCampingPro {
+background-image: url(../imagenes/fondo.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+
+#NP .CatCamping {
+  width: 100%;
+  background-image: url(../imagenes/catcamp.jpeg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  
+}
+
+
+
+#NP .CatArmPro .album {
+background-image: url(../imagenes/fondo.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+#NP .CatArm {
+  background-image: url(../imagenes/tirocat.jfif);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  
+}
+
+#NP .CatMonPro {
+background-image: url(../imagenes/fondo.jpg);
+background-position: center center;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+#NP .CatMon {
+  width: 100%;
+  background-image: url(../imagenes/catmon.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+  
+}
+
+
 #NP nav {
+  width: 100%;
+}
+#NP footer {
   width: 100%;
 }
 
